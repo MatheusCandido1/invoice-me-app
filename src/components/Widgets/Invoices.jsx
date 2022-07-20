@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import Button from '../Button';
 import Panel from '../Panel';
 
@@ -6,6 +8,12 @@ import { BsArrowUpRight } from "react-icons/bs";
 import InvoiceItem from '../InvoiceItem';
 
 export default function Invoice() {
+  
+  const navigate = useNavigate();
+
+  const handleSeeAllInvoicesClick = () => {
+    navigate('invoices')
+  }
   
   return (
     <Panel width="lg:w-3/6 sm:w-full" height="h-full">
@@ -21,7 +29,7 @@ export default function Invoice() {
           <InvoiceItem date="01/01" total={4830.00} company="Dynaccurate SARL" status={2}  />
           <InvoiceItem date="01/02" total={5030.00} company="Dynaccurate SARL" status={1}  />
           
-          <section className="flex justify-end items-center gap-2 hover:underline text-gray-main cursor-pointer">
+          <section onClick={handleSeeAllInvoicesClick} className="flex justify-end items-center gap-2 hover:underline text-gray-main cursor-pointer">
             <p className="font-semibold text-sm h">Ver todos invoices</p>
             <BsArrowUpRight size={16} />
           </section>
