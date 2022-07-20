@@ -29,7 +29,7 @@ module.exports = {
         },
         secondary: {
           main: "#2A8873",
-          light: "#ECFEED"
+          light: "#88dac1",
         },
         danger: {
           main: "#E7235E",
