@@ -15,7 +15,7 @@ export default function Stats() {
   const [customers] = useState(0);
 
   return (
-    <Panel width="lg:w-4/6 sm:w-full" height="h-40">
+    <Panel width="lg:w-4/6 sm:w-full" height="h-auto">
         <header className="w-full h-14 flex justify-between items-center p-4">
           <h4 className="text-dark-main font-bold text-lg">Dashboard</h4>
           <div className="flex gap-1 bg-gray-buttonBackground p-1 rounded-lg">
