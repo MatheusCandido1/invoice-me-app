@@ -15,7 +15,7 @@ export default function Stats() {
   const [customers] = useState(0);
 
   return (
-    <Panel width="w-4/6" height="h-44">
+    <Panel width="lg:w-4/6 sm:w-full" height="h-full">
         <header className="w-full h-14 flex justify-between items-center p-4">
           <h4 className="text-dark-main font-bold text-lg">Dashboard</h4>
           <div className="flex gap-1 bg-gray-buttonBackground p-1 rounded-lg">
@@ -23,22 +23,22 @@ export default function Stats() {
             <Button size="small" label="Anual" type="light" />
           </div>
         </header>
-        <div className="p-4 flex items-center gap-4">
-          <section className="flex flex-col bg-primary-lightest py-2 px-4 rounded-lg w-1/3">
+        <div className="p-4 flex flex-col sm:flex-row items-center gap-4">
+          <section className="flex flex-col bg-primary-lightest py-2 px-4 rounded-lg lg:w-1/3 w-full">
             <div className="flex justify-between items-center">
               <span className="font-bold">{Helper.formatCurrency(billing)}</span>
               <TbCoin size={24} />
             </div>
             <p className="text-gray-main font-semibold mt-1">Faturamento</p>
           </section>
-          <section className="flex flex-col bg-primary-lightest py-2 px-4 rounded-lg w-1/3">
+          <section className="flex flex-col bg-primary-lightest py-2 px-4 rounded-lg lg:w-1/3 w-full">
             <div className="flex justify-between items-center">
               <span className="font-bold">{invoices}</span>
               <TbFileDescription size={24} />
             </div>
             <p className="text-gray-main font-semibold mt-1">Invoices</p>
           </section>
-          <section className="flex flex-col bg-primary-lightest py-2 px-4 rounded-lg w-1/3">
+          <section className="flex flex-col bg-primary-lightest py-2 px-4 rounded-lg lg:w-1/3 w-full">
             <div className="flex justify-between items-center">
               <span className="font-bold">{customers}</span>
               <TbUsers size={24} />

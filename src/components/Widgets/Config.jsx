@@ -4,7 +4,7 @@ import { BiWallet, BiUserPlus } from "react-icons/bi";
 
 export default function Config() {
   return (
-    <Panel width="w-3/6" height="h-full">
+    <Panel width="lg:w-3/6 sm:w-full" height="h-40">
       <header className="w-full h-14 flex flex-col justify-start items-start p-4">
         <h4 className="text-dark-main font-bold text-lg">Configurações</h4>
         <p className="text-gray-main font-semibold text-sm">Gerencie contas e clientes.</p>

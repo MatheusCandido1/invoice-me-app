@@ -2,13 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  @apply bg-light-main h-screen
+  @apply bg-light-main;
+  flex-grow: 1;
+  overflow: auto;
 }
