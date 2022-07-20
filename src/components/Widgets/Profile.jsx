@@ -1,9 +1,8 @@
 import Panel from '../Panel';
 
-import { HiOutlineLogout } from "react-icons/hi";
 export default function Profile() {
-  return (
-    <Panel width="lg:w-2/6 sm:w-full" height="h-full">
+    return (
+    <Panel width="lg:w-2/6 sm:w-full" height="h-40">
     <header className="w-full h-14 flex justify-between items-center p-4">
       <h4 className="text-dark-main font-bold text-lg">Perfil</h4>
     </header>
@@ -16,13 +15,6 @@ export default function Profile() {
       </div>
       <div className="ml-2">
         <div className="py-0.5 px-2 rounded-lg bg-primary-lighter text-primary-main font-bold text-sm">Online</div>
-      </div>
-    </div>
-    
-    <div className="flex w-full px-4 mt-3 mb-4">
-      <div className="w-full hover:text-white hover:bg-primary-main cursor-pointer flex border-2 text-primary-main border-primary-main rounded-lg px-2 justify-center items-center">
-        <HiOutlineLogout size={26}  />
-        <p className="font-semibold">Logout</p>
       </div>
     </div>
   </Panel>

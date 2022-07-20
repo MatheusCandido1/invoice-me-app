@@ -14,7 +14,7 @@ export default function Router() {
         <Route path="/invoices" element={<Invoices />} />
       </Route>
       <Route path="/sign-in" element={<SignIn />} />
-      <Route path="/sign-ip" element={<SignUp />} />
+      <Route path="/sign-up" element={<SignUp />} />
     </Routes>
   )
 }
