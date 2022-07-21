@@ -28,7 +28,7 @@ export default function SignUp() {
                         <div className="w-full px-3">
                             <label  className="text-xs font-semibold px-1">Nome Completo:</label>
                             <div className="flex">
-                                <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i className="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
+                                <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i className="mdi mdi-account-arrow-right-outline text-gray-400 text-lg"></i></div>
                                 <input type="email" className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-primary-main" placeholder="johnsmith@example.com" />
                             </div>
                         </div>
