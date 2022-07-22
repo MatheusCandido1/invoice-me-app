@@ -1,10 +1,12 @@
 import { Routes, Route } from "react-router-dom"
 
-import Home from './pages/Home';
-import Invoices from './pages/Invoices';
-import SignUp from './pages/Auth/SignUp';
-import SignIn from './pages/Auth/SignIn';
-import Layout from './components/Layout';
+import Home from "./pages/Home";
+import Invoices from "./pages/Invoices";
+import SignUp from "./pages/Auth/SignUp";
+import SignIn from "./pages/Auth/SignIn";
+import Layout from "./components/Layout";
+import Accounts from "./pages/Accounts";
+import Customers from "./pages/Customers";
 
 export default function Router() {
   return (
@@ -12,6 +14,8 @@ export default function Router() {
       <Route element={<Layout />}>
         <Route path="/" exact element={<Home />} />
         <Route path="/invoices" element={<Invoices />} />
+        <Route path="/accounts" element={<Accounts />} />
+        <Route path="/customers" element={<Customers />} />
       </Route>
       <Route path="/sign-in" element={<SignIn />} />
       <Route path="/sign-up" element={<SignUp />} />

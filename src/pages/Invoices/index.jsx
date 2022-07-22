@@ -1,7 +1,7 @@
 import Button from '../../components/Button';
 import Panel from '../../components/Panel';
 
-import InvoiceItem from '../../components/InvoiceItem';
+import InvoiceItem from '../../components/Invoices/InvoiceItem';
 
 export default function Invoices() {
   return (
@@ -50,7 +50,7 @@ export default function Invoices() {
             <InvoiceItem date="01/01" total={4830.00} company="Dynaccurate SARL" status={2}  />
             <InvoiceItem date="01/02" total={5030.00} company="Dynaccurate SARL" status={1}  />
           </section>
-          <footer class="btn-group flex justify-center items-center mt-4 ">
+          <footer class="btn-group flex justify-end items-center mt-4 ">
             <button class="btn bg-primary-main border-none hover:bg-primary-dark">
               <i className="mdi mdi-chevron-double-left"></i>
             </button>

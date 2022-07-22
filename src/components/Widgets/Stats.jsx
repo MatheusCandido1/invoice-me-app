@@ -10,9 +10,9 @@ import Helper from "../../util/Helper";
 
 export default function Stats() {
   
-  const [billing] = useState(0);
-  const [invoices] = useState(0);
-  const [customers] = useState(0);
+  const [billing] = useState(20000);
+  const [invoices] = useState(2);
+  const [customers] = useState(1);
 
   const [filter, setFilter] = useState('monthly');
 

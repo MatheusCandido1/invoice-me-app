@@ -5,7 +5,7 @@ import Panel from '../Panel';
 
 import { BsArrowUpRight } from "react-icons/bs";
 
-import InvoiceItem from '../InvoiceItem';
+import InvoiceItem from '../Invoices/InvoiceItem';
 
 export default function Invoice() {
   
@@ -26,8 +26,8 @@ export default function Invoice() {
           <Button size="medium" label="Novo Invoice" type="primary" />
         </section>
         <section className="flex flex-col w-full mt-4 gap-4">
-          <InvoiceItem date="01/01" total={4830.00} company="Dynaccurate SARL" status={2}  />
-          <InvoiceItem date="01/02" total={5030.00} company="Dynaccurate SARL" status={1}  />
+          <InvoiceItem date="01/01" total={10000.00} company="Dynaccurate SARL" status={2}  />
+          <InvoiceItem date="01/02" total={10000.00} company="Dynaccurate SARL" status={1}  />
           
           <section onClick={handleSeeAllInvoicesClick} className="flex justify-end items-center gap-2 hover:underline text-gray-main cursor-pointer">
             <p className="font-semibold text-sm h">Ver todos invoices</p>
