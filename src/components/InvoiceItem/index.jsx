@@ -11,7 +11,7 @@ export default function InvoiceItem({date, total, company, status}) {
       case 1: 
         return 'bg-primary-lighter text-primary-main'
       case 2: 
-        return 'bg-secondary-light text-secondary-main'
+        return 'bg-success-main text-white'
     default:    
       return 'bg-primary-lighter text-primary-main'
     }
