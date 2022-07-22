@@ -14,13 +14,19 @@ export default function Stats() {
   const [invoices] = useState(0);
   const [customers] = useState(0);
 
+  const [filter, setFilter] = useState('monthly');
+
+  function handleFilterClick (value) {
+    setFilter(value);
+  }
+
   return (
     <Panel width="lg:w-4/6 sm:w-full" height="h-auto">
         <header className="w-full h-14 flex justify-between items-center p-4">
           <h4 className="text-dark-main font-bold text-lg">Dashboard</h4>
           <div className="flex gap-1 bg-gray-buttonBackground p-1 rounded-lg">
-            <Button size="small" label="Mensal" type="secondary" />
-            <Button size="small" label="Anual" type="light" />
+              <Button size="small" label="Mensal" type={`${filter === 'monthly' ? "secondary" : "light"}`} onClick={() => handleFilterClick('monthly')}  />
+              <Button size="small" label="Anual" type={`${filter === 'yearly' ? "secondary" : "light"}`} onClick={() => handleFilterClick('yearly')}  />
           </div>
         </header>
         <div className="p-4 flex flex-col sm:flex-row items-center gap-4">

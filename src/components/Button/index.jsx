@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import "./styles.css";
 
-export default function Button({size, type, label}) {
+export default function Button({size, type, label, onClick}) {
   
   const getButtonStyle = (size, type) => {
     return `${getButtonSize(size)} ${getButtonType(type)}`
@@ -34,7 +34,7 @@ export default function Button({size, type, label}) {
   }
 
   return (
-    <button className={'button ' + getButtonStyle(size, type)}>
+    <button onClick={onClick} className={'button ' + getButtonStyle(size, type)}>
       {label}
     </button>
   )
@@ -44,4 +44,9 @@ Button.propTypes = {
   label: PropTypes.string.isRequired,
   size: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
- }
+  onClick: PropTypes.func.isRequired
+}
+
+Button.defaultProps = {
+  onClick: () => null
+}

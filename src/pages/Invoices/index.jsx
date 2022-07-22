@@ -37,7 +37,7 @@ export default function Invoices() {
               <div className="w-full">
                 <label  className="text-xs font-semibold px-1">Status:</label>
                 <div className="flex">
-                  <select class="w-auto px-2 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-primary-main">
+                  <select className="w-auto px-2 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-primary-main">
                   <option disabled selected>Selecione..</option>
                   <option>Em andamento</option>
                   <option>Pago</option>
