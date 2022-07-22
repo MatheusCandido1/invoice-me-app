@@ -34,11 +34,11 @@ export default function Accounts() {
 
   const AccountFooter = () => {
     return (
-      <footer className="btn-group flex justify-center lg:justify-end items-center mt-4 w-full" >
+      <footer className="flex justify-center lg:justify-end items-center mt-4 w-full gap-2" >
         <button className="btn bg-primary-main border-none hover:bg-primary-dark">
           <i className="mdi mdi-chevron-double-left"></i>
         </button>
-        <button  onClick={() => handleEditClick({id: 1, name: '2'})} className="btn bg-primary-main border-none hover:bg-primary-dark">Página 1</button>
+        <button className="btn bg-primary-main border-none hover:bg-primary-dark">Página 1</button>
         <button className="btn bg-primary-main border-none hover:bg-primary-dark">
           <i className="mdi mdi-chevron-double-right"></i>
         </button>
@@ -57,9 +57,7 @@ export default function Accounts() {
         <div className="p-4 w-full">
           <section className="flex flex-col w-full mt-4 gap-4">
             <AccountHeader />
-            <AccountItem />
-            <AccountItem />
-            <AccountItem />
+            <AccountItem onEditClick={() => handleEditClick({id: 1})} />
           </section>
           <AccountFooter />
         </div>
