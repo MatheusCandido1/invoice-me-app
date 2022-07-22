@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Panel from '../../components/Panel';
 
 import AccountItem from '../../components/Accounts/AccountItem';
@@ -7,6 +7,13 @@ import EditAccount from '../../components/Accounts/EditAccount';
 
 export default function Accounts() {
   const [account, setAccount] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 
   const handleEditClick = (currentAccount) => {
     window.scrollTo({
@@ -36,11 +43,11 @@ export default function Accounts() {
     return (
       <footer className="flex justify-center lg:justify-end items-center mt-4 w-full gap-2" >
         <button className="btn bg-primary-main border-none hover:bg-primary-dark">
-          <i className="mdi mdi-chevron-double-left"></i>
+          <i className="mdi mdi-chevron-double-left text-white"></i>
         </button>
-        <button className="btn bg-primary-main border-none hover:bg-primary-dark">Página 1</button>
+        <button className="btn bg-primary-main border-none hover:bg-primary-dark text-white">Página 1</button>
         <button className="btn bg-primary-main border-none hover:bg-primary-dark">
-          <i className="mdi mdi-chevron-double-right"></i>
+          <i className="mdi mdi-chevron-double-right text-white"></i>
         </button>
       </footer>
     );

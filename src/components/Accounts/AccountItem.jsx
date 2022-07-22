@@ -9,7 +9,7 @@ export default function AccountItem({onEditClick}) {
   }
 
   return (
-    <div className="w-full flex items-center flex-wrap md:flex-nowrap md:gap-4 p-4 hover:bg-gray-200 rounded-lg cursor-pointer">
+    <div className="w-full flex items-center flex-wrap md:flex-nowrap md:gap-4 p-4 hover:bg-gray-100 rounded-lg cursor-pointer">
       <div className="w-full md:w-5/12 flex flex-col justify-center items-center mt-4 md:mt-0 order-3 md:order-2">
         <span className="font-bold text-dark-main">BR7278632767000010005981352C1</span>
       </div>

@@ -1,9 +1,18 @@
+import { useEffect } from "react";
 import Panel from "../../../components/Panel"
 
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 export default function SignIn() {
+
+  
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 
   const navigate = useNavigate();
 
