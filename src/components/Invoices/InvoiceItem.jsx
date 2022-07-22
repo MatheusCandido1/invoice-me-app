@@ -29,7 +29,7 @@ export default function InvoiceItem({date, total, company, status}) {
   }
 
   return (
-    <div className="w-full flex items-center flex-wrap md:flex-nowrap md:gap-4 p-1.5 hover:bg-gray-100 rounded-lg cursor-pointer">
+    <div className="w-full flex items-center flex-wrap md:flex-nowrap md:gap-4 p-1.5 hover:bg-gray-200 rounded-lg cursor-pointer">
             <div className="w-1/2 flex justify-center md:w-1/12 order-1">
               <div className="rounded-full w-12 h-12 border-2 border-gray-300 p-2 flex justify-center items-center">
                 <p className="text-sm font-bold text-gray-dark">{date}</p>

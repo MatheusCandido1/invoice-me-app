@@ -18,7 +18,7 @@ export default function Invoices() {
         </header>
         <div className="p-4">
           <section className="w-full flex items-center justify-center">
-            <div className="flex justify-center items-center gap-2 bg-gray-100 rounded-lg p-3">
+            <div className="flex justify-center w-full flex-col md:flex-row items-center gap-2 bg-gray-200 rounded-lg p-3 md:w-auto">
               <div className="w-full">
                 <label  className="text-xs font-semibold px-1">Data Inicio:</label>
                 <div className="flex">
@@ -37,10 +37,10 @@ export default function Invoices() {
               <div className="w-full">
                 <label  className="text-xs font-semibold px-1">Status:</label>
                 <div className="flex">
-                  <select className="w-auto px-2 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-primary-main">
-                  <option disabled selected>Selecione..</option>
-                  <option>Em andamento</option>
-                  <option>Pago</option>
+                  <select className="w-full px-2 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-primary-main" defaultValue={1}>
+                  <option value="1" disabled>Selecione..</option>
+                  <option value="2">Em andamento</option>
+                  <option value="3">Pago</option>
                 </select>
                 </div>
               </div>
@@ -50,12 +50,12 @@ export default function Invoices() {
             <InvoiceItem date="01/01" total={4830.00} company="Dynaccurate SARL" status={2}  />
             <InvoiceItem date="01/02" total={5030.00} company="Dynaccurate SARL" status={1}  />
           </section>
-          <footer class="btn-group flex justify-end items-center mt-4 ">
-            <button class="btn bg-primary-main border-none hover:bg-primary-dark">
+          <footer className="btn-group flex justify-end items-center mt-4 ">
+            <button className="btn bg-primary-main border-none hover:bg-primary-dark">
               <i className="mdi mdi-chevron-double-left"></i>
             </button>
-            <button class="btn bg-primary-main border-none hover:bg-primary-dark">Página 1</button>
-            <button class="btn bg-primary-main border-none hover:bg-primary-dark">
+            <button className="btn bg-primary-main border-none hover:bg-primary-dark">Página 1</button>
+            <button className="btn bg-primary-main border-none hover:bg-primary-dark">
               <i className="mdi mdi-chevron-double-right"></i>
             </button>
           </footer>
