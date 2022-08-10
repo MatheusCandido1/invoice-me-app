@@ -33,6 +33,7 @@ module.exports = {
         },
         danger: {
           main: "#E7235E",
+          dark: "#cf1f54",
         },
         success: {
           main: "#40a693",

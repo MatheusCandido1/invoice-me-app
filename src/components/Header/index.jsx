@@ -12,7 +12,7 @@ export default function Header() {
 
   const handleLogoutClick = () => {
     toast.info("See you later!");
-    navigate('sign-in');
+    navigate('');
   }
 
   return (

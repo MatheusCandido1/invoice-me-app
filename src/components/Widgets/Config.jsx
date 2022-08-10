@@ -8,11 +8,11 @@ export default function Config() {
   const navigate = useNavigate();
 
   const handleAccountsClick = () => {
-    navigate('accounts')
+    navigate('/accounts')
   }
 
   const handleCustomersClick = () => {
-    navigate('customers')
+    navigate('/customers')
   }
 
   return (

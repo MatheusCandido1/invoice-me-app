@@ -8,15 +8,16 @@ import Router from "../../router";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 function App() {
   return (
     <BrowserRouter>
-        <Router>
-          <Layout />
-        </Router>
-        <ToastContainer
-          position="top-right"
-        />
+      <Router>
+        <Layout />
+      </Router>
+      <ToastContainer
+        position="top-right"
+      />
     </BrowserRouter>
   );
 }
